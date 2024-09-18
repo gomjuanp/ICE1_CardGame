@@ -49,7 +49,6 @@ public class CardTrick {
         userCard.setValue(userValue);
         userCard.setSuit(Card.SUITS[userSuit]);
         boolean found = false;
-        Card luckyCard = new Card();
         
         for (int i = 0; i <magicHand.length; i++){
             
