@@ -50,8 +50,6 @@ public class CardTrick {
         userCard.setSuit(Card.SUITS[userSuit]);
         boolean found = false;
         Card luckyCard = new Card();
-        luckyCard.setValue(4);
-        luckyCard.setSuit(Card.SUITS[1]);
         
         for (int i = 0; i <magicHand.length; i++){
             
@@ -64,11 +62,6 @@ public class CardTrick {
             
         }
         
-        if(userCard.getValue() == luckyCard.getValue() && userCard.getSuit() == luckyCard.getSuit()){
-    
-            System.out.println("Amazing, your card is the LUCKY CARD.");
-            
-        }
         if(found == true){
             
             System.out.println("Well done, your card is in the magic hand.");
